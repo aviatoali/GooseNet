@@ -1,0 +1,22 @@
+{
+  "name": "GooseNet",
+  "version": "0.1.0",
+  "summary": "A short description of GooseNet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aviatoali/GooseNet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aviatoali": "ashah@tangocode.com"
+  },
+  "source": {
+    "git": "https://github.com/aviatoali/GooseNet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GooseNet/Classes/**/*"
+}

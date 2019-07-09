@@ -1,15 +1,14 @@
 # GooseNet
 
-[![CI Status](https://img.shields.io/travis/aviatoali/GooseNet.svg?style=flat)](https://travis-ci.org/aviatoali/GooseNet)
 [![Version](https://img.shields.io/cocoapods/v/GooseNet.svg?style=flat)](https://cocoapods.org/pods/GooseNet)
-[![License](https://img.shields.io/cocoapods/l/GooseNet.svg?style=flat)](https://cocoapods.org/pods/GooseNet)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 [![Platform](https://img.shields.io/cocoapods/p/GooseNet.svg?style=flat)](https://cocoapods.org/pods/GooseNet)
+
+This CocoaPods library is meant as a minimalistic async networking layer for reuse across projects with built-in SSL pinning helpers for security concerns.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -22,7 +21,7 @@ pod 'GooseNet'
 
 ## Author
 
-aviatoali, ashah@tangocode.com
+Ali H. Shah, email: aviatoali@gmail.com, [linkedin](https://www.linkedin.com/in/ali-shah-717144123/)
 
 ## License
 

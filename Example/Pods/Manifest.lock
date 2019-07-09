@@ -1,0 +1,16 @@
+PODS:
+  - GooseNet (0.1.0)
+
+DEPENDENCIES:
+  - GooseNet (from `../`)
+
+EXTERNAL SOURCES:
+  GooseNet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GooseNet: 04094a756b4734a3f4d915aba9ea11ef7ad240d9
+
+PODFILE CHECKSUM: c9be399f4918f4326f8658c1961d2b4eda1e81b1
+
+COCOAPODS: 1.7.3

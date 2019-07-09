@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GooseNet'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GooseNet.'
+  s.summary          = 'A vanilla async networking convenience pod using GCD. Includes options for SSL pinning'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+"This CocoaPods library is meant as a minimalistic async networking layer for reuse across projects with built-in SSL pinning helpers for security concerns."
                        DESC
 
   s.homepage         = 'https://github.com/aviatoali/GooseNet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'aviatoali' => 'ashah@tangocode.com' }
+  s.author           = { 'aviatoali' => 'aviatoali@gmail.com' }
   s.source           = { :git => 'https://github.com/aviatoali/GooseNet.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url   = 'https://www.linkedin.com/in/ali-shah-717144123/'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'GooseNet/Classes/**/*'
   
