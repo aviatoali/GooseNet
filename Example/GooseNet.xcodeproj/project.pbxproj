@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		24EDFB308B13B4B0F7ED6717 /* Pods_GooseNet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F4AFA19ED59067DB43602 /* Pods_GooseNet_Example.framework */; };
+		414635DD22D9146D004E2E45 /* GetLegalDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414635DC22D9146D004E2E45 /* GetLegalDoc.swift */; };
+		414635DF22D9148C004E2E45 /* LegalDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414635DE22D9148C004E2E45 /* LegalDoc.swift */; };
+		41622FBA22D4EF9000F39620 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41622FB922D4EF9000F39620 /* ViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		1B5CA1001BA05D64B0101C30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		414635DC22D9146D004E2E45 /* GetLegalDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLegalDoc.swift; sourceTree = "<group>"; };
+		414635DE22D9148C004E2E45 /* LegalDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDoc.swift; sourceTree = "<group>"; };
+		41622FB922D4EF9000F39620 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		596B8E497F88B7F2B0BFBFC1 /* Pods-GooseNet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooseNet_Example.release.xcconfig"; path = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GooseNet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooseNet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				41622FB922D4EF9000F39620 /* ViewModel.swift */,
+				414635DC22D9146D004E2E45 /* GetLegalDoc.swift */,
+				414635DE22D9148C004E2E45 /* LegalDoc.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -328,8 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414635DF22D9148C004E2E45 /* LegalDoc.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				41622FBA22D4EF9000F39620 /* ViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				414635DD22D9146D004E2E45 /* GetLegalDoc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VC5DVLF3JX;
 				INFOPLIST_FILE = GooseNet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -486,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VC5DVLF3JX;
 				INFOPLIST_FILE = GooseNet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
