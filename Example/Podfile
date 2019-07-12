@@ -3,6 +3,7 @@ use_frameworks!
 target 'GooseNet_Example' do
   pod 'GooseNet', :path => '../'
 
+	
   target 'GooseNet_Tests' do
     inherit! :search_paths
 
