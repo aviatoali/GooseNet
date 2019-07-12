@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GooseNet'
   s.version          = '0.1.0'
-  s.summary          = 'A vanilla async networking convenience pod using GCD. Includes options for SSL pinning'
+  s.summary          = 'A tiny vanilla async networking convenience pod using GCD and dataTask'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-"This CocoaPods library is meant as a minimalistic async networking layer for reuse across projects with built-in SSL pinning helpers for security concerns."
+"This CocoaPods library is meant as a minimalistic async networking layer for reuse across projects to cut down on code repetition. Upcoming features include SSL-Pinning helpers for security concerns, request retrying, and webSocketTask and streamTask support"
                        DESC
 
   s.homepage         = 'https://github.com/aviatoali/GooseNet'
