@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		105499CB0F5C60624834101208ABA552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1254A7F2DD472BEE3AE8EFCBD2AC137E /* GooseNetLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86282B9D79A39F9C0E567DB2D398CA70 /* GooseNetLogging.swift */; };
+		27AC7D9DD5F7DAAA4F4CBEF5F63E7C54 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC05FC372DBB94F21AEA3F678EA124A /* Endpoint.swift */; };
+		2CD3E8CC10D996C18044466D15E4B43C /* GooseNet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA41EB48F6270F30FF0C65CBF9D550EF /* GooseNet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42D6D9460764539DB1BB57554431FC1F /* ServiceRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA4D366A516B4018DA34148A6B7390 /* ServiceRequestExecutor.swift */; };
 		46E004CA586E2C84DE047A1999D46DD7 /* Pods-GooseNet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 206D69511B0D8B604062B83E18D31ED0 /* Pods-GooseNet_Example-dummy.m */; };
 		5E66EA9D2715C58FAF6DFB37F4B066CF /* Pods-GooseNet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7353A67058D107956723428B1DD292 /* Pods-GooseNet_Tests-dummy.m */; };
-		633D31E3D37E85BCCD08889F1B2E5BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8455B6A5E7F93E4A3FD36236A6F81346 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA08C82FD7F726B83B057FB2A2ABC40 /* ReplaceMe.swift */; };
-		905163043952B9A0582F5041CD4DE33D /* GooseNet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AFFADD8737045B784220ACEA7277F0 /* GooseNet-dummy.m */; };
+		6C30E9CB5460F81FEA29BB6EC7B7243C /* GooseNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742F4B222C7D1C11FBB2775F13CB6EB /* GooseNetError.swift */; };
+		722E0AE0F7B87BDE62A3A88D27B4CA8D /* HTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76377A45C24A2F700FE024904A8B43AE /* HTTPProtocol.swift */; };
+		805BC3756264F7EC189C4CDFFFF0611F /* ServiceResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B0BB4CFD0606302045B90463B91F9 /* ServiceResponseData.swift */; };
+		9908B10F0E38E9976FA4B83AEC055081 /* URLSessionServiceRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6575E18DF744F34A8FEE359C8A3565C /* URLSessionServiceRequestExecutor.swift */; };
 		9E42E898B4197DF462BD2B24620047ED /* Pods-GooseNet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA627C4A245764C4A0FCB9A699C7EE8 /* Pods-GooseNet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1DA9EB187002E7B5665AEC4DA5ADF8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE175F62D4529DA96D42C13881579E6D /* HTTPMethod.swift */; };
+		B080C4D0957A199020A0582D0B5F8DD5 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593E7A99B0CDD61B6647C1B6742EF894 /* ServiceRequest.swift */; };
 		CFD30B75C14EB842F109EAD0A70DE881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D2D3DD7DC422E26106A127DF5465EAEC /* Pods-GooseNet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD58EED9DE493D898C8195D50FD5447E /* Pods-GooseNet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF22C3D6D49461C6EC6784340B67859A /* GooseNet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DC34B589067533EFFC873726ED8EE5 /* GooseNet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2F826266E140353CE7FC0260E654FAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D43F0FC55CB3516A0F3D69128EB806E6 /* GooseNet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0F76D47649507F3AB0E1F6D7474E8 /* GooseNet-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,36 +45,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0699B8CC3008501A22D0382B6C40FBB0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		08721C70E6B9442C19E70ECEB91BB052 /* Pods-GooseNet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooseNet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0CB4D7FF46CBE18B596D1B51EB09FCBC /* GooseNet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GooseNet.modulemap; sourceTree = "<group>"; };
 		0F8122E819EAC67E65DEB001D63ABC4B /* Pods-GooseNet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GooseNet_Example.modulemap"; sourceTree = "<group>"; };
+		1725FD48ED3BF378AB37597ECB83E696 /* GooseNet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GooseNet.modulemap; sourceTree = "<group>"; };
 		206D69511B0D8B604062B83E18D31ED0 /* Pods-GooseNet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GooseNet_Example-dummy.m"; sourceTree = "<group>"; };
+		20FA4D366A516B4018DA34148A6B7390 /* ServiceRequestExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceRequestExecutor.swift; path = GooseNet/Classes/ServiceRequestExecutor.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37D3ECE95B600038EEE8E09D04F3F386 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3742F4B222C7D1C11FBB2775F13CB6EB /* GooseNetError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GooseNetError.swift; path = GooseNet/Classes/GooseNetError.swift; sourceTree = "<group>"; };
 		394F9DFBF00CA84B42BFAE14DF48D452 /* GooseNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GooseNet.framework; path = GooseNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		437EFC14803AE9A4CCA3DCCC1DE7C6C2 /* Pods-GooseNet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GooseNet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4B6FD77F4D57D7AFB44FCD3CBEF33AA3 /* Pods-GooseNet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooseNet_Tests-Info.plist"; sourceTree = "<group>"; };
-		4D2EED0A1E3C3C50BBF46CD07B768CBB /* GooseNet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooseNet.xcconfig; sourceTree = "<group>"; };
-		51AE99B00E718D2C5A4D4807AAD48A24 /* GooseNet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GooseNet-prefix.pch"; sourceTree = "<group>"; };
+		540AB50F065476EB29B53611C2F8DBBB /* GooseNet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GooseNet-Info.plist"; sourceTree = "<group>"; };
+		593E7A99B0CDD61B6647C1B6742EF894 /* ServiceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceRequest.swift; path = GooseNet/Classes/ServiceRequest.swift; sourceTree = "<group>"; };
 		5996DB5F3A6532AF33E156D0739BB4A8 /* Pods-GooseNet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooseNet_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5A5B0BB4CFD0606302045B90463B91F9 /* ServiceResponseData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceResponseData.swift; path = GooseNet/Classes/ServiceResponseData.swift; sourceTree = "<group>"; };
+		69E0F76D47649507F3AB0E1F6D7474E8 /* GooseNet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GooseNet-dummy.m"; sourceTree = "<group>"; };
+		6D0EB2BA5AF0B232683BA30A2617E4DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		76377A45C24A2F700FE024904A8B43AE /* HTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPProtocol.swift; path = GooseNet/Classes/HTTPProtocol.swift; sourceTree = "<group>"; };
 		802088FD3470FAF06A0F937180DB7571 /* Pods-GooseNet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GooseNet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		84DC34B589067533EFFC873726ED8EE5 /* GooseNet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GooseNet-umbrella.h"; sourceTree = "<group>"; };
+		86282B9D79A39F9C0E567DB2D398CA70 /* GooseNetLogging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GooseNetLogging.swift; path = GooseNet/Classes/GooseNetLogging.swift; sourceTree = "<group>"; };
 		8CA627C4A245764C4A0FCB9A699C7EE8 /* Pods-GooseNet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooseNet_Example-umbrella.h"; sourceTree = "<group>"; };
 		8E896B9F7E8716169F5B9B51D1E7ED71 /* Pods_GooseNet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GooseNet_Example.framework; path = "Pods-GooseNet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9626A1D1413A9460573DF0B45938C935 /* GooseNet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GooseNet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A07747FA1D740DC2FF51644452C6BD0 /* Pods-GooseNet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GooseNet_Tests.modulemap"; sourceTree = "<group>"; };
-		9C18C9AFEA29BB8FB507792FEE55B4CB /* GooseNet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GooseNet-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7B1987672B3AFE60D5BBBCF7FC3E9E6 /* Pods-GooseNet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooseNet_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AD58EED9DE493D898C8195D50FD5447E /* Pods-GooseNet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooseNet_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B4AFFADD8737045B784220ACEA7277F0 /* GooseNet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GooseNet-dummy.m"; sourceTree = "<group>"; };
+		AE175F62D4529DA96D42C13881579E6D /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = GooseNet/Classes/HTTPMethod.swift; sourceTree = "<group>"; };
+		B6575E18DF744F34A8FEE359C8A3565C /* URLSessionServiceRequestExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionServiceRequestExecutor.swift; path = GooseNet/Classes/URLSessionServiceRequestExecutor.swift; sourceTree = "<group>"; };
+		B68C4D8B60B73F68C6E366C3C2A99AEA /* GooseNet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooseNet.xcconfig; sourceTree = "<group>"; };
 		B864D1B135C06804155B5BFD7E94A10B /* Pods-GooseNet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooseNet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA41EB48F6270F30FF0C65CBF9D550EF /* GooseNet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GooseNet-umbrella.h"; sourceTree = "<group>"; };
 		BCD567D1B09B4979803CF40A4B734231 /* Pods-GooseNet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooseNet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C228AB8566E6F900114DBE19C0414D01 /* Pods-GooseNet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooseNet_Example-Info.plist"; sourceTree = "<group>"; };
 		C3B6A8E70C22DF5713F383CB92A9D5A2 /* Pods-GooseNet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooseNet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CAA08C82FD7F726B83B057FB2A2ABC40 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GooseNet/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		C85C873354A177DF83124C3F6EE1F4EC /* GooseNet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GooseNet-prefix.pch"; sourceTree = "<group>"; };
+		D8C0ACADEC0D05D597B9FB89BC4C4C8B /* GooseNet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GooseNet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D97B91B7EF27C378A3456ACE24D52EB0 /* Pods-GooseNet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooseNet_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA9CCE2F317E586F6F6580D61FE346AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EAC05FC372DBB94F21AEA3F678EA124A /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = GooseNet/Classes/Endpoint.swift; sourceTree = "<group>"; };
 		EF7353A67058D107956723428B1DD292 /* Pods-GooseNet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GooseNet_Tests-dummy.m"; sourceTree = "<group>"; };
 		FD5D01EC5F7C13CD614D3D78DF8B4A3B /* Pods_GooseNet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GooseNet_Tests.framework; path = "Pods-GooseNet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,11 +96,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83002C728DCD15B3CF236E4EF017CA8B /* Frameworks */ = {
+		9F12C4A54F20F58FF6F532493D4319AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633D31E3D37E85BCCD08889F1B2E5BAB /* Foundation.framework in Frameworks */,
+				D2F826266E140353CE7FC0260E654FAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,16 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02D2AFE5B2AC2FC12CCF32A3D661DFCE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9626A1D1413A9460573DF0B45938C935 /* GooseNet.podspec */,
-				37D3ECE95B600038EEE8E09D04F3F386 /* LICENSE */,
-				0699B8CC3008501A22D0382B6C40FBB0 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		09836CD4AD1D6BC1C4877011B3B7A9CD /* Pods-GooseNet_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,26 +141,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		213070AB98E935BA7845278E5B0C27CE /* Support Files */ = {
+		41933448CC376740FBDF064A49B4C779 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0CB4D7FF46CBE18B596D1B51EB09FCBC /* GooseNet.modulemap */,
-				4D2EED0A1E3C3C50BBF46CD07B768CBB /* GooseNet.xcconfig */,
-				B4AFFADD8737045B784220ACEA7277F0 /* GooseNet-dummy.m */,
-				9C18C9AFEA29BB8FB507792FEE55B4CB /* GooseNet-Info.plist */,
-				51AE99B00E718D2C5A4D4807AAD48A24 /* GooseNet-prefix.pch */,
-				84DC34B589067533EFFC873726ED8EE5 /* GooseNet-umbrella.h */,
+				D277D7E5A438D51AB1FCA2CFDA4E70D9 /* GooseNet */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4ECC60DA83EA3E1F250ED4F151185D09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1725FD48ED3BF378AB37597ECB83E696 /* GooseNet.modulemap */,
+				B68C4D8B60B73F68C6E366C3C2A99AEA /* GooseNet.xcconfig */,
+				69E0F76D47649507F3AB0E1F6D7474E8 /* GooseNet-dummy.m */,
+				540AB50F065476EB29B53611C2F8DBBB /* GooseNet-Info.plist */,
+				C85C873354A177DF83124C3F6EE1F4EC /* GooseNet-prefix.pch */,
+				BA41EB48F6270F30FF0C65CBF9D550EF /* GooseNet-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/GooseNet";
-			sourceTree = "<group>";
-		};
-		961EC770CBC29E2442C2EFECCCCECB49 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC5196DE360F08C1BEE0047522D680AB /* GooseNet */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A1DCD61B4EEC4B667B616342C03AAF14 /* Targets Support Files */ = {
@@ -174,22 +180,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CC5196DE360F08C1BEE0047522D680AB /* GooseNet */ = {
-			isa = PBXGroup;
-			children = (
-				CAA08C82FD7F726B83B057FB2A2ABC40 /* ReplaceMe.swift */,
-				02D2AFE5B2AC2FC12CCF32A3D661DFCE /* Pod */,
-				213070AB98E935BA7845278E5B0C27CE /* Support Files */,
-			);
-			name = GooseNet;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				961EC770CBC29E2442C2EFECCCCECB49 /* Development Pods */,
+				41933448CC376740FBDF064A49B4C779 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				1247924AFDBCA373283EF603BFCABCE3 /* Products */,
 				A1DCD61B4EEC4B667B616342C03AAF14 /* Targets Support Files */,
@@ -202,6 +197,35 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D277D7E5A438D51AB1FCA2CFDA4E70D9 /* GooseNet */ = {
+			isa = PBXGroup;
+			children = (
+				EAC05FC372DBB94F21AEA3F678EA124A /* Endpoint.swift */,
+				3742F4B222C7D1C11FBB2775F13CB6EB /* GooseNetError.swift */,
+				86282B9D79A39F9C0E567DB2D398CA70 /* GooseNetLogging.swift */,
+				AE175F62D4529DA96D42C13881579E6D /* HTTPMethod.swift */,
+				76377A45C24A2F700FE024904A8B43AE /* HTTPProtocol.swift */,
+				593E7A99B0CDD61B6647C1B6742EF894 /* ServiceRequest.swift */,
+				20FA4D366A516B4018DA34148A6B7390 /* ServiceRequestExecutor.swift */,
+				5A5B0BB4CFD0606302045B90463B91F9 /* ServiceResponseData.swift */,
+				B6575E18DF744F34A8FEE359C8A3565C /* URLSessionServiceRequestExecutor.swift */,
+				D761940AB8AC361DEECF6DF4AE71AA41 /* Pod */,
+				4ECC60DA83EA3E1F250ED4F151185D09 /* Support Files */,
+			);
+			name = GooseNet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D761940AB8AC361DEECF6DF4AE71AA41 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D8C0ACADEC0D05D597B9FB89BC4C4C8B /* GooseNet.podspec */,
+				6D0EB2BA5AF0B232683BA30A2617E4DF /* LICENSE */,
+				EA9CCE2F317E586F6F6580D61FE346AE /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		E54109F61774C3F11A1BECDF7234BBF6 /* Pods-GooseNet_Example */ = {
@@ -224,11 +248,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B30CBE722707DC44B510A9767A27991 /* Headers */ = {
+		4DC5C7E2D3DB11016337F7DFDD9F9A3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF22C3D6D49461C6EC6784340B67859A /* GooseNet-umbrella.h in Headers */,
+				2CD3E8CC10D996C18044466D15E4B43C /* GooseNet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +277,12 @@
 /* Begin PBXNativeTarget section */
 		184744B77CEA1E27CE5948368B566975 /* GooseNet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B71C9C7080E907996B5EAB113863B1C /* Build configuration list for PBXNativeTarget "GooseNet" */;
+			buildConfigurationList = 7820B6D29217DD12A86DB3689956FF6C /* Build configuration list for PBXNativeTarget "GooseNet" */;
 			buildPhases = (
-				0B30CBE722707DC44B510A9767A27991 /* Headers */,
-				306D90700B64678E13D30453C3047F11 /* Sources */,
-				83002C728DCD15B3CF236E4EF017CA8B /* Frameworks */,
-				7B212BE25D8D155BBF072E3F644FF564 /* Resources */,
+				4DC5C7E2D3DB11016337F7DFDD9F9A3B /* Headers */,
+				DDB4A0C0102D30711604FE5A2E073243 /* Sources */,
+				9F12C4A54F20F58FF6F532493D4319AB /* Frameworks */,
+				7CB8C7DBD3ADCAB011460C75A69A3F3F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -336,7 +360,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B212BE25D8D155BBF072E3F644FF564 /* Resources */ = {
+		7CB8C7DBD3ADCAB011460C75A69A3F3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,15 +384,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		306D90700B64678E13D30453C3047F11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				905163043952B9A0582F5041CD4DE33D /* GooseNet-dummy.m in Sources */,
-				8455B6A5E7F93E4A3FD36236A6F81346 /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		61100EF1D6FD80CD621ACE9420040EAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +397,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E66EA9D2715C58FAF6DFB37F4B066CF /* Pods-GooseNet_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB4A0C0102D30711604FE5A2E073243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AC7D9DD5F7DAAA4F4CBEF5F63E7C54 /* Endpoint.swift in Sources */,
+				D43F0FC55CB3516A0F3D69128EB806E6 /* GooseNet-dummy.m in Sources */,
+				6C30E9CB5460F81FEA29BB6EC7B7243C /* GooseNetError.swift in Sources */,
+				1254A7F2DD472BEE3AE8EFCBD2AC137E /* GooseNetLogging.swift in Sources */,
+				AE1DA9EB187002E7B5665AEC4DA5ADF8 /* HTTPMethod.swift in Sources */,
+				722E0AE0F7B87BDE62A3A88D27B4CA8D /* HTTPProtocol.swift in Sources */,
+				B080C4D0957A199020A0582D0B5F8DD5 /* ServiceRequest.swift in Sources */,
+				42D6D9460764539DB1BB57554431FC1F /* ServiceRequestExecutor.swift in Sources */,
+				805BC3756264F7EC189C4CDFFFF0611F /* ServiceResponseData.swift in Sources */,
+				9908B10F0E38E9976FA4B83AEC055081 /* URLSessionServiceRequestExecutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +435,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		20F033E5BD6D5BD14FF52826E59093A6 /* Debug */ = {
+		164602F82F6344667BF348FDA2DAE076 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D2EED0A1E3C3C50BBF46CD07B768CBB /* GooseNet.xcconfig */;
+			baseConfigurationReference = B68C4D8B60B73F68C6E366C3C2A99AEA /* GooseNet.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -419,7 +453,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GooseNet/GooseNet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GooseNet/GooseNet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GooseNet/GooseNet.modulemap";
 				PRODUCT_MODULE_NAME = GooseNet;
@@ -427,18 +461,54 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3563F797CFF3667EE8244B5703022977 /* Debug */ = {
+		17F3417D56C6C7D12C4027517E51E146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68C4D8B60B73F68C6E366C3C2A99AEA /* GooseNet.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GooseNet/GooseNet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GooseNet/GooseNet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GooseNet/GooseNet.modulemap";
+				PRODUCT_MODULE_NAME = GooseNet;
+				PRODUCT_NAME = GooseNet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FBB164C61C52B0D9185406CE3C203F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3B6A8E70C22DF5713F383CB92A9D5A2 /* Pods-GooseNet_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -450,7 +520,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests.modulemap";
@@ -467,107 +537,7 @@
 			};
 			name = Debug;
 		};
-		3D103946A70D742AA011BCFA06675E4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5996DB5F3A6532AF33E156D0739BB4A8 /* Pods-GooseNet_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		43133B03AA30A0CA7ED821BA57057CED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D97B91B7EF27C378A3456ACE24D52EB0 /* Pods-GooseNet_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6BAB00F52DA858B30284CF7E4F85091B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D2EED0A1E3C3C50BBF46CD07B768CBB /* GooseNet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GooseNet/GooseNet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GooseNet/GooseNet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GooseNet/GooseNet.modulemap";
-				PRODUCT_MODULE_NAME = GooseNet;
-				PRODUCT_NAME = GooseNet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -615,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,7 +597,114 @@
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		3D9B2E35DFAC3E20F0C60A80BE0769D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97B91B7EF27C378A3456ACE24D52EB0 /* Pods-GooseNet_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78B87F0691870611E3F9681E839FD7E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5996DB5F3A6532AF33E156D0739BB4A8 /* Pods-GooseNet_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Tests/Pods-GooseNet_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA6C275B2A5146ACD3AA96720712F84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD567D1B09B4979803CF40A4B734231 /* Pods-GooseNet_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -678,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -691,56 +768,23 @@
 			};
 			name = Debug;
 		};
-		EB514DE4D36814303853733DAEAC8458 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCD567D1B09B4979803CF40A4B734231 /* Pods-GooseNet_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GooseNet_Example/Pods-GooseNet_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B71C9C7080E907996B5EAB113863B1C /* Build configuration list for PBXNativeTarget "GooseNet" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20F033E5BD6D5BD14FF52826E59093A6 /* Debug */,
-				6BAB00F52DA858B30284CF7E4F85091B /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		7820B6D29217DD12A86DB3689956FF6C /* Build configuration list for PBXNativeTarget "GooseNet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				164602F82F6344667BF348FDA2DAE076 /* Debug */,
+				17F3417D56C6C7D12C4027517E51E146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -748,8 +792,8 @@
 		D1EC0FB79CA1BB6BB31A409F44113F1B /* Build configuration list for PBXNativeTarget "Pods-GooseNet_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3563F797CFF3667EE8244B5703022977 /* Debug */,
-				3D103946A70D742AA011BCFA06675E4A /* Release */,
+				1FBB164C61C52B0D9185406CE3C203F4 /* Debug */,
+				78B87F0691870611E3F9681E839FD7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -757,8 +801,8 @@
 		EFC3B99744B48129D97633F8291B6676 /* Build configuration list for PBXNativeTarget "Pods-GooseNet_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB514DE4D36814303853733DAEAC8458 /* Debug */,
-				43133B03AA30A0CA7ED821BA57057CED /* Release */,
+				DA6C275B2A5146ACD3AA96720712F84F /* Debug */,
+				3D9B2E35DFAC3E20F0C60A80BE0769D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,22 +1,25 @@
 {
   "name": "GooseNet",
   "version": "0.1.0",
-  "summary": "A short description of GooseNet.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A vanilla async networking convenience pod using GCD. Includes options for SSL pinning",
+  "description": "\"This CocoaPods library is meant as a minimalistic async networking layer for reuse across projects with built-in SSL pinning helpers for security concerns.\"",
   "homepage": "https://github.com/aviatoali/GooseNet",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "aviatoali": "ashah@tangocode.com"
+    "aviatoali": "aviatoali@gmail.com"
   },
   "source": {
     "git": "https://github.com/aviatoali/GooseNet.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://www.linkedin.com/in/ali-shah-717144123/",
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
-  "source_files": "GooseNet/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "GooseNet/Classes/**/*",
+  "swift_version": "5.0"
 }

@@ -1,5 +1,4 @@
 import XCTest
-import GooseNet
 
 class Tests: XCTestCase {
     
